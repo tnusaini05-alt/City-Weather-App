@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Weather App</h1>
+      <p>Search any city and check live weather instantly.</p>
+    </header>
+
+    <main class="main">
+      <section class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off" />
+        <button id="searchBtn">Search</button>
+      </section>
+
+      <section id="loading" class="loading hidden">Loading weather...</section>
+      <section id="error" class="error hidden"></section>
+
+      <section id="weatherCard" class="weather-card hidden">
+        <div class="weather-top">
+          <div>
+            <h2 id="cityName">City Name</h2>
+            <p id="weatherDesc">Weather Description</p>
+          </div>
+          <img id="weatherIcon" src="" alt="Weather Icon" />
+        </div>
+
+        <div class="weather-main">
+          <h3 id="temperature">0°C</h3>
+        </div>
+
+        <div class="weather-details">
+          <div>
+            <span>Humidity</span>
+            <p id="humidity">0%</p>
+          </div>
+          <div>
+            <span>Wind</span>
+            <p id="wind">0 m/s</p>
+          </div>
+          <div>
+            <span>Feels Like</span>
+            <p id="feelsLike">0°C</p>
+          </div>
+        </div>
+        <button id="locationBtn">Use My Location</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
